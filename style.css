@@ -173,6 +173,30 @@ h1 {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+.link-icon {
+    font-size: 2rem;
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    margin-right: 1rem;
+}
+
+/* Coming Soon disabled card */
+.coming-soon {
+    cursor: default;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.coming-soon:hover {
+    transform: translateY(0);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
 .link-content h2 {
     font-size: 1.2rem;
     font-weight: 600;
