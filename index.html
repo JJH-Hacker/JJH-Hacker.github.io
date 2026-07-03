@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects Hub</title>
+    <title>JJH — Growth Log</title>
+    <meta name="description" content="JJH의 성장기록과 프로젝트를 모아둔 공간입니다.">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background-shapes">
@@ -14,54 +15,172 @@
         <div class="shape shape-3"></div>
     </div>
 
-    <main class="hub-container">
-        <header class="hub-header glass">
-            <!-- 프로필 이미지를 넣고 싶다면 src 속성에 이미지 경로를 넣으세요 -->
-            <div class="profile-img">🚀</div>
-            <h1>Project <span class="highlight">Gateway</span></h1>
-            <p>제가 만든 다양한 웹사이트 프로젝트들을 모아둔 공간입니다.</p>
-        </header>
+    <!-- Navigation -->
+    <nav class="navbar glass" id="navbar">
+        <div class="logo">JJH<span class="logo-dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="projects">Projects</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-        <section class="links-section">
-            <a href="https://grams-moms-shop-nascar.trycloudflare.com" target="_blank" class="link-card glass">
-                <div class="link-icon">🤖</div>
-                <div class="link-content">
-                    <h2>로컬 AI 서버</h2>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu glass" id="mobileMenu">
+        <a href="#" class="mobile-link active" data-page="home">Home</a>
+        <a href="#" class="mobile-link" data-page="projects">Projects</a>
+    </div>
+
+    <!-- ===== PAGE: HOME ===== -->
+    <main class="page active" id="page-home">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-inner">
+                <span class="badge">🚀 Builder & Dreamer</span>
+                <h1>안녕하세요,<br><span class="highlight">JJH</span>입니다</h1>
+                <p class="hero-desc">코딩과 로켓, AI에 빠진 학생 개발자.<br>이곳은 제가 걸어온 길과 만들어가는 것들의 기록입니다.</p>
+                <div class="hero-stats">
+                    <div class="stat glass">
+                        <span class="stat-num">3+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat glass">
+                        <span class="stat-num">2026</span>
+                        <span class="stat-label">Since</span>
+                    </div>
+                    <div class="stat glass">
+                        <span class="stat-num">∞</span>
+                        <span class="stat-label">Curiosity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Growth Timeline -->
+        <section class="timeline-section">
+            <h2 class="section-title">성장 기록<span class="title-dot">.</span></h2>
+            <p class="section-subtitle">배우고, 만들고, 성장하는 여정</p>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item" data-aos="left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2026. 07</span>
+                        <h3>🌐 나만의 웹사이트 오픈</h3>
+                        <p>내도메인.한국과 GitHub Pages를 활용해 무료 도메인으로 개인 웹사이트를 구축. 글래스모피즘 디자인의 프로젝트 허브를 완성했다.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML/CSS/JS</span>
+                            <span class="tag">GitHub Pages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2026. 07</span>
+                        <h3>💘 AI 연애 확률 시뮬레이터</h3>
+                        <p>Firebase와 AI를 활용한 웹 앱을 기획하고 배포까지 완료. 사용자 입력을 기반으로 AI가 연애 확률을 분석하는 재미있는 프로젝트.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Firebase</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Web App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2026. 07</span>
+                        <h3>🤖 로컬 AI 서버 구축</h3>
+                        <p>Cloudflare Tunnel을 이용해 로컬 AI 모델을 외부에서 접근 가능한 서버로 공개. 인프라와 네트워킹에 대한 이해를 크게 넓혔다.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Cloudflare</span>
+                            <span class="tag">Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass">
+                        <span class="timeline-date">2026. 06</span>
+                        <h3>🚀 KNSB 로켓 설계</h3>
+                        <p>KNO₃/설탕 고체 연료 로켓을 직접 설계. 추진력 계산과 구조 설계를 공부하며 항공우주 분야에 대한 꿈을 키워나가고 있다.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">로켓 공학</span>
+                            <span class="tag">물리</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass coming-soon-card">
+                        <span class="timeline-date">계속됩니다...</span>
+                        <h3>🔮 다음 챕터</h3>
+                        <p>새로운 도전과 프로젝트가 이곳에 기록될 예정입니다. 계속 지켜봐 주세요!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== PAGE: PROJECTS ===== -->
+    <main class="page" id="page-projects">
+        <section class="projects-hero">
+            <h2 class="section-title">프로젝트<span class="title-dot">.</span></h2>
+            <p class="section-subtitle">직접 만들고 배포한 프로젝트들</p>
+        </section>
+
+        <section class="projects-grid">
+            <a href="https://grams-moms-shop-nascar.trycloudflare.com" target="_blank" class="project-card glass">
+                <div class="project-icon">🤖</div>
+                <div class="project-info">
+                    <h3>로컬 AI 서버</h3>
                     <p>직접 구축한 로컬 AI 서버 프로젝트</p>
                 </div>
-                <div class="arrow">➔</div>
+                <div class="project-arrow">➔</div>
             </a>
 
-            <a href="https://love-predictor-ai-2026.web.app" target="_blank" class="link-card glass">
-                <div class="link-icon">💘</div>
-                <div class="link-content">
-                    <h2>AI 연애 확률 시뮬레이터</h2>
+            <a href="https://love-predictor-ai-2026.web.app" target="_blank" class="project-card glass">
+                <div class="project-icon">💘</div>
+                <div class="project-info">
+                    <h3>AI 연애 확률 시뮬레이터</h3>
                     <p>AI가 분석하는 나의 연애 확률은?</p>
                 </div>
-                <div class="arrow">➔</div>
+                <div class="project-arrow">➔</div>
             </a>
 
-            <a href="https://github.com/JJH-Hacker" target="_blank" class="link-card glass">
-                <div class="link-icon">🐙</div>
-                <div class="link-content">
-                    <h2>GitHub</h2>
+            <a href="https://github.com/JJH-Hacker" target="_blank" class="project-card glass">
+                <div class="project-icon">🐙</div>
+                <div class="project-info">
+                    <h3>GitHub</h3>
                     <p>내 모든 프로젝트 소스코드가 있는 곳</p>
                 </div>
-                <div class="arrow">➔</div>
+                <div class="project-arrow">➔</div>
             </a>
 
-            <div class="link-card glass coming-soon">
-                <div class="link-icon">🔮</div>
-                <div class="link-content">
-                    <h2>Coming Soon...</h2>
+            <div class="project-card glass disabled">
+                <div class="project-icon">🔮</div>
+                <div class="project-info">
+                    <h3>Coming Soon...</h3>
                     <p>새로운 프로젝트를 준비 중입니다!</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="hub-footer text-glass">
-        <p>&copy; 2026 Project Hub. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2026 JJH. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
