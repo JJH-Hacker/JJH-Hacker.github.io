@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Projects Hub</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -14,50 +14,51 @@
         <div class="shape shape-3"></div>
     </div>
 
-    <nav class="navbar glass">
-        <div class="logo">Portfolio.</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="hub-container">
+        <header class="hub-header glass">
+            <!-- 프로필 이미지를 넣고 싶다면 src 속성에 이미지 경로를 넣으세요 -->
+            <div class="profile-img">🚀</div>
+            <h1>Project <span class="highlight">Gateway</span></h1>
+            <p>제가 만든 다양한 웹사이트 프로젝트들을 모아둔 공간입니다.</p>
+        </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content glass">
-                <span class="badge">Welcome to my space</span>
-                <h1>Hello, I'm a <span class="highlight">Creator</span></h1>
-                <p>Building beautiful and dynamic digital experiences. Explore my work and let's create something amazing together.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">View Projects</a>
-                    <a href="#contact" class="btn secondary">Contact Me</a>
+        <section class="links-section">
+            <a href="https://project1.com" target="_blank" class="link-card glass">
+                <div class="link-content">
+                    <h2>AI Dating Simulator</h2>
+                    <p>인공지능과 대화하며 즐기는 신개념 데이팅 시뮬레이션 게임</p>
                 </div>
-            </div>
-        </section>
+                <div class="arrow">➔</div>
+            </a>
 
-        <section id="about" class="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-card glass">
-                    <h3>Design</h3>
-                    <p>I focus on creating intuitive, user-centric designs with modern aesthetics.</p>
+            <a href="https://project2.com" target="_blank" class="link-card glass">
+                <div class="link-content">
+                    <h2>KNSB Rocket Design</h2>
+                    <p>KNSB 고체 연료 로켓 설계 및 추진력 계산기</p>
                 </div>
-                <div class="about-card glass">
-                    <h3>Development</h3>
-                    <p>Writing clean, efficient code to bring ideas to life on the web.</p>
+                <div class="arrow">➔</div>
+            </a>
+
+            <a href="https://project3.com" target="_blank" class="link-card glass">
+                <div class="link-content">
+                    <h2>My Personal Blog</h2>
+                    <p>개발 지식과 일상을 공유하는 블로그</p>
                 </div>
-                <div class="about-card glass">
-                    <h3>Innovation</h3>
-                    <p>Constantly exploring new technologies to build the future.</p>
+                <div class="arrow">➔</div>
+            </a>
+            
+            <a href="https://project4.com" target="_blank" class="link-card glass">
+                <div class="link-content">
+                    <h2>Coming Soon...</h2>
+                    <p>새로운 프로젝트를 준비 중입니다!</p>
                 </div>
-            </div>
+                <div class="arrow">➔</div>
+            </a>
         </section>
     </main>
 
-    <footer class="glass">
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    <footer class="hub-footer text-glass">
+        <p>&copy; 2026 Project Hub. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
